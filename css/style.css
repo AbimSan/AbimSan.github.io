@@ -89,7 +89,51 @@ footer {
     padding: 90px 8%;
 }
 
+/* Research hero - consistent with homepage */
+.research-hero {
+    background: white;
+    color: #333;
+    text-align: center;
+    padding: 60px 20px;
+}
+
 .research-hero h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    color: #0A2342;
+    margin: 18px 0;
+}
+
+.research-hero p {
+    max-width: 900px;
+    margin: 15px auto;
+    line-height: 1.8;
+    color: #555;
+}
+
+.research-hero .eyebrow {
+    color: #2E8B57;
+}
+
+.hero-description {
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.research-hero .btn-outline {
+    border: 1px solid #2E8B57;
+    color: #2E8B57;
+}
+
+/* .research-hero h1 {
     font-size: clamp(36px, 5vw, 54px);
     margin: 18px 0;
 }
@@ -139,7 +183,7 @@ footer {
 .btn-outline {
     border: 1px solid #ffffff;
     color: #ffffff;
-}
+} */
 
 .section {
     padding: 70px 8%;
