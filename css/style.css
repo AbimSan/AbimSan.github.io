@@ -76,6 +76,13 @@ footer {
    RESEARCH PAGE
 ===================================== */
 
+/* Shared content container */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .research-hero {
     background: linear-gradient(135deg, #0A2342, #123d66);
     color: #ffffff;
