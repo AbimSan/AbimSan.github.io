@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Abimbola Sangodoyin</title>
+  <meta name="description" content="Contact Abimbola Sangodoyin for cybersecurity, research, academic and professional collaboration enquiries.">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
 <header class="navbar">
   <h1>Abimbola Sangodoyin</h1>
+  <p>Cybersecurity Strategy | Governance &amp; Risk | Cloud Security | Research</p>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -19,10 +22,83 @@
     <a href="contact.html">Contact</a>
   </nav>
 </header>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">CONTACT</p>
+      <h2>Let's connect and explore opportunities to collaborate</h2>
+      <p class="lead">I welcome conversations relating to cybersecurity strategy, governance and risk, research collaboration, professional development, teaching and consulting opportunities.</p>
+    </div>
+  </section>
 
-<section class="hero">
-  <h2>This page is under development</h2>
-</section>
+  <section class="page-section">
+    <div class="container contact-layout">
+      <div>
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Start a conversation</h2>
+        <p>For professional enquiries, research discussions, speaking opportunities or potential collaborations, please use the contact details and professional profiles below.</p>
+        <div class="contact-links">
+          <button class="contact-link contact-email-button" id="emailContactButton" type="button">
+            <strong>Email</strong>
+            <span id="emailContactLabel">Select to open your email application</span>
+          </button>
+          <a class="contact-link" href="https://linkedin.com/in/abimbola-sangodoyin" target="_blank" rel="noopener noreferrer"><strong>LinkedIn</strong><span>linkedin.com/in/abimbola-sangodoyin</span></a>
+          <a class="contact-link" href="https://github.com/AbimSan" target="_blank" rel="noopener noreferrer"><strong>GitHub</strong><span>github.com/AbimSan</span></a>
+          <a class="contact-link" href="https://orcid.org/0000-0001-7346-4701" target="_blank" rel="noopener noreferrer"><strong>ORCID</strong><span>0000-0001-7346-4701</span></a>
+          <a class="contact-link" href="https://scholar.google.co.uk/citations?user=ILQViwIAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer"><strong>Google Scholar</strong><span>View research profile</span></a>
+        </div>
+        <p class="small-note">To reduce automated email harvesting, the email address is assembled only when you select the Email option. You can also connect through LinkedIn.</p>
+      </div>
+      <aside class="contact-panel">
+        <h3>Areas of collaboration</h3>
+        <ul>
+          <li>Cybersecurity strategy and governance</li>
+          <li>Information security and technology risk</li>
+          <li>Artificial intelligence security and governance</li>
+          <li>Cloud and emerging technology security</li>
+          <li>Cybersecurity research and knowledge exchange</li>
+          <li>Professional training and development</li>
+        </ul>
+        <p class="small-note">For professional networking and collaboration, you are welcome to connect through LinkedIn.</p>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>© 2026 Abimbola Sangodoyin | Cybersecurity Portfolio</p>
+</footer>
 
-</body>
+<style>
+  .contact-email-button {
+    width: 100%;
+    text-align: left;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+  }
+  .contact-email-button:hover,
+  .contact-email-button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+  }
+</style>
+<script>
+  (function () {
+    // The address is assembled on click to deter simple email-harvesting bots.
+    const emailCharacters = [97, 111, 115, 97, 110, 103, 111, 100, 111, 121, 105, 110, 64, 121, 97, 104, 111, 111, 46, 99, 111, 109];
+    const button = document.getElementById("emailContactButton");
+    const label = document.getElementById("emailContactLabel");
+
+    if (!button || !label) return;
+
+    button.addEventListener("click", function () {
+      const address = String.fromCharCode.apply(null, emailCharacters);
+      window.location.href = "mailto:" + address;
+      label.textContent = "Opening your email application…";
+    });
+  })();
+</script>
+\n</body>
 </html>
