@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Abimbola Sangodoyin</title>
+  <meta name="description" content="Selected cybersecurity research projects by Abimbola Sangodoyin, covering DDoS detection, software-defined networking, machine learning, network performance analysis and mitigation.">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .project-list { display: grid; gap: 1.5rem; }
+    .project-card {
+      background: #fff;
+      border: 1px solid #e4e9ef;
+      border-left: 4px solid #2E8B57;
+      border-radius: 10px;
+      padding: 1.6rem;
+      box-shadow: 0 4px 16px rgba(10,35,66,.05);
+    }
+    .project-card h3 { color: #0A2342; margin: .25rem 0 .85rem; }
+    .project-card h4 { color: #0A2342; margin: 1.15rem 0 .35rem; font-size: 1rem; }
+    .project-meta { color: #64748b; font-size: .92rem; margin-bottom: .8rem; }
+    .project-tags { display: flex; flex-wrap: wrap; gap: .45rem; margin: 1rem 0; }
+    .project-tags span {
+      display: inline-block; background: #eef4f8; color: #29445e;
+      border-radius: 20px; padding: .28rem .65rem; font-size: .8rem;
+    }
+    .project-links { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; }
+    .project-links a { color: #2E8B57; font-weight: 600; text-decoration: none; }
+    .project-links a:hover { text-decoration: underline; }
+    .project-intro { max-width: 900px; }
+    .project-number { color: #2E8B57; font-weight: 700; letter-spacing: .08em; font-size: .78rem; }
+    @media (max-width: 640px) { .project-card { padding: 1.15rem; } }
+  </style>
 </head>
-
 <body>
-
 <header class="navbar">
   <h1>Abimbola Sangodoyin</h1>
+  <p>Cybersecurity Strategy | Governance &amp; Risk | Cloud Security | Research</p>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -20,9 +48,120 @@
   </nav>
 </header>
 
-<section class="hero">
-  <h2>This page is under development</h2>
-</section>
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow">SELECTED PROJECTS | NETWORK SECURITY | CYBER RESILIENCE</p>
+      <h2>Research Projects in Network Security and Intelligent Threat Detection</h2>
+      <p class="lead project-intro">A selection of research projects exploring the detection, analysis and mitigation of denial-of-service attacks in Software-Defined Networks (SDN). The work combines experimental network environments, statistical analysis and machine learning to investigate how network behaviour can be used to identify attacks and strengthen infrastructure resilience.</p>
+    </div>
+  </section>
 
+  <section class="page-section">
+    <div class="container">
+      <p class="eyebrow">RESEARCH-LED PROJECTS</p>
+      <h2>From Attack Detection to Network Resilience</h2>
+      <p class="project-intro">These projects form a connected body of work: understanding the impact of attacks, identifying measurable indicators of abnormal behaviour, applying intelligent detection techniques and investigating responsive countermeasures.</p>
+
+      <div class="project-list">
+
+        <article class="project-card">
+          <span class="project-number">PROJECT 01</span>
+          <h3>Machine Learning-Based Detection and Classification of DDoS Flooding Attacks in Software-Defined Networks</h3>
+          <p class="project-meta">Journal article | IEEE Access | 2021</p>
+          <p>Software-Defined Networking offers programmability and centralised network management, but its architecture also creates security challenges. Distributed Denial of Service (DDoS) flooding attacks can consume network resources and undermine service availability. This project investigated how machine learning could distinguish malicious flooding activity from legitimate network behaviour in an SDN environment.</p>
+          <h4>Research approach</h4>
+          <p>An experimental SDN environment was used to generate and examine network traffic under normal conditions and during HTTP, TCP and UDP flooding attacks. Network performance indicators, including throughput, jitter and response time, were used to develop and evaluate machine learning classifiers, including Quadratic Discriminant Analysis, Gaussian Naïve Bayes, k-Nearest Neighbour and Classification and Regression Tree (CART).</p>
+          <h4>Contribution</h4>
+          <p>The study demonstrated the potential of data-driven classification for identifying DDoS flooding activity in programmable networks. CART achieved the strongest overall reported classification performance, with an average prediction accuracy of 98%. The findings illustrate how experimentally generated network data can support the development and evaluation of intelligent network threat-detection approaches.</p>
+          <div class="project-tags"><span>Software-Defined Networking</span><span>Machine Learning</span><span>DDoS Detection</span><span>Network Analytics</span></div>
+          <div class="project-links">
+            <a href="https://ieeexplore.ieee.org/document/9526586" target="_blank" rel="noopener noreferrer">Read the IEEE publication</a>
+            <a href="https://doi.org/10.1109/ACCESS.2021.3109490" target="_blank" rel="noopener noreferrer">View DOI</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">PROJECT 02</span>
+          <h3>Statistical Anomaly Detection of DDoS Attacks in Software-Defined Networks</h3>
+          <p class="project-meta">Conference paper | IEEE FiCloud | 2018</p>
+          <p>Detecting DDoS attacks is challenging because malicious traffic can share characteristics with legitimate network activity. This project explored a statistical approach to identifying abnormal traffic behaviour in SDN environments, with particular attention to flooding attacks that affect the availability of network services.</p>
+          <h4>Research approach</h4>
+          <p>The work used an emulated SDN environment to investigate TCP-ACK, SYN and Slowloris attacks. Throughput measurements gathered from the victim server were used to establish a statistical baseline. The detection approach examined deviations from the baseline to identify abnormal behaviour and assess attack severity.</p>
+          <h4>Contribution</h4>
+          <p>The study presented a lightweight, measurement-led approach to DDoS detection that uses performance information collected at the victim server. It also considered how data collection could reduce the need for extensive communication between the controller and network switches. The work highlights the value of statistical baselining as a practical technique for network anomaly detection.</p>
+          <div class="project-tags"><span>Statistical Analysis</span><span>Anomaly Detection</span><span>TCP Flooding</span><span>SDN Security</span></div>
+          <div class="project-links">
+            <a href="https://www.researchgate.net/profile/Babagana-Modu/publication/326957454_An_Approach_to_Detecting_Distributed_Denial_of_Service_Attacks_in_Software_Defined_Networks/links/5b6ff4b5299bf14c6d9a73f9/An-Approach-to-Detecting-Distributed-Denial-of-Service-Attacks-in-Software-Defined-Networks.pdf" target="_blank" rel="noopener noreferrer">Read the paper (PDF)</a>
+            <a href="https://doi.org/10.1109/FICLOUD.2018.00069" target="_blank" rel="noopener noreferrer">View DOI</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">PROJECT 03</span>
+          <h3>Assessing the Impact of Denial-of-Service Attacks on Software-Defined Networks</h3>
+          <p class="project-meta">Conference paper | WiSATS 2017 proceedings | Published 2018</p>
+          <p>SDN separates network control functions from data forwarding, creating flexibility but also introducing security considerations. This project examined how a Denial of Service (DoS) attack can affect network performance and the availability of services in an SDN environment.</p>
+          <h4>Research approach</h4>
+          <p>An experimental network was constructed using Mininet and the OpenDaylight (ODL) controller. Network performance was evaluated using tools including iperf and ping. ICMP flooding was performed against TCP and UDP servers connected through OpenFlow switches, allowing the impact on throughput and jitter to be observed.</p>
+          <h4>Contribution</h4>
+          <p>The experiments showed a substantial reduction in throughput, from 233 Mbps to 87.4 Mbps, together with increased jitter during the attack. The findings provide an empirical illustration of how DoS activity can degrade SDN performance and reinforce the importance of evaluating availability and resilience as part of network security design.</p>
+          <div class="project-tags"><span>Network Resilience</span><span>DoS Impact Assessment</span><span>Mininet</span><span>OpenDaylight</span></div>
+          <div class="project-links">
+            <a href="https://wlv.openrepository.com/server/api/core/bitstreams/f9b45f28-66a4-45d7-b267-b8f7e7c9ef94/content" target="_blank" rel="noopener noreferrer">Read the full paper</a>
+            <a href="https://doi.org/10.1007/978-3-319-76571-6_2" target="_blank" rel="noopener noreferrer">View DOI</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">PROJECT 04</span>
+          <h3>A Framework for DDoS Attack Detection and Reactive Countermeasures in Software-Defined Networks</h3>
+          <p class="project-meta">Conference paper | IEEE FiCloud | 2019</p>
+          <p>Detection is an important part of network defence, but identifying an attack is only one element of an effective response. This project extended the research focus from attack detection towards a framework that considers both the identification of DDoS activity and reactive countermeasures in an SDN environment.</p>
+          <h4>Research focus</h4>
+          <p>The work addresses the use of SDN architecture for DDoS attack detection and response. By considering the network's programmable control capabilities, the research investigates a framework-oriented approach to detecting malicious activity and triggering responsive countermeasures.</p>
+          <h4>Contribution</h4>
+          <p>The project contributes to the broader investigation of security mechanisms for programmable networks, connecting attack detection with the need for timely response. It forms part of a progression from measuring attack impact and identifying anomalous behaviour towards considering how SDN environments can support reactive defence.</p>
+          <div class="project-tags"><span>DDoS Detection</span><span>Reactive Countermeasures</span><span>SDN Security</span><span>Network Defence</span></div>
+          <div class="project-links">
+            <a href="https://doi.org/10.1109/FICLOUD.2019.00019" target="_blank" rel="noopener noreferrer">Read the IEEE publication</a>
+            <a href="https://dblp.org/rec/conf/ficloud/SangodoyinMMAD19" target="_blank" rel="noopener noreferrer">View publication record</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">PROJECT 05</span>
+          <h3>Sensitivity Analysis of Software-Defined Network Performance Parameters for DDoS Detection</h3>
+          <p class="project-meta">Journal article | Simulation Modelling Practice and Theory | 2020</p>
+          <p>Effective anomaly detection depends on selecting network indicators that provide meaningful evidence of abnormal behaviour. This project investigated the sensitivity of key SDN performance parameters to DDoS flooding attacks, helping to understand which measurements may be most informative for network monitoring and detection.</p>
+          <h4>Research approach</h4>
+          <p>The study applied Local Sensitivity Analysis (LSA) and an Artificial Neural Network (ANN)-based prediction model to examine throughput, jitter and response time. Additive White Gaussian Noise (AWGN) was introduced to assess the sensitivity of the model outputs by examining deviations between predicted and actual values.</p>
+          <h4>Contribution</h4>
+          <p>The findings indicated that all three performance metrics were sensitive to DDoS flooding attacks, with jitter identified as the most sensitive indicator. This provides useful insight for selecting and prioritising network features in monitoring and intelligent detection models.</p>
+          <div class="project-tags"><span>Sensitivity Analysis</span><span>Artificial Neural Networks</span><span>Network Metrics</span><span>DDoS Analytics</span></div>
+          <div class="project-links">
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S1569190X2030037X" target="_blank" rel="noopener noreferrer">Read the ScienceDirect publication</a>
+            <a href="https://doi.org/10.1016/j.simpat.2020.102099" target="_blank" rel="noopener noreferrer">View DOI</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section">
+    <div class="container">
+      <p class="eyebrow">RESEARCH CONNECTION</p>
+      <h2>From Measurement to Intelligent Network Defence</h2>
+      <p class="lead">Taken together, these projects explore complementary stages of network security research: measuring the impact of attacks, establishing statistical baselines, identifying sensitive performance indicators, applying machine learning for detection and investigating reactive countermeasures.</p>
+      <p>For the wider research profile, including additional publications, research themes and academic contributions, visit the <a href="research.html">Research &amp; Publications page</a>.</p>
+      <p>For professional or research collaboration enquiries, please <a href="contact.html">get in touch</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 Abimbola Sangodoyin | Cybersecurity Portfolio</p>
+</footer>
 </body>
 </html>
